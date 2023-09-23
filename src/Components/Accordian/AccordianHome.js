@@ -1,15 +1,17 @@
-import React from 'react'
+import React from 'react';
+import style from '../../Styles/ComponentPages.module.css';
+
 
 const AccordianHome = () => {
   return (
-    <div style={{display:'flex'}}>
-      <div style={{width:'100%', height:'100vh', overflow:'auto'}}>
-        <section id="section1" style={{height:'300px', border:'10px solid pink', zIndex:'1', width:'74%'}}>Section 1</section>
+    <div className={style['main-container']}>
+      <div className={style['component-container']}>
+        <section id="section1" style={{height:'300px', border:'10px solid pink', width:'74%'}}>Section 1</section>
         <section id="section2" style={{height:'300px'}}>Section 2</section>
         <section id="section3" style={{height:'300px'}}>Section 3</section>
         <section id="section4" style={{height:'300px'}}>Section 4</section>
       
-      <div style={{width:'20%', position:'absolute', top:'0', right:'16px',zIndex:'10', backgroundColor:'white'}}>
+      <div className={style['sidenav-container']}>
         <p>Topics on this page</p>
         <ul>
           <li><a href="#section1">Section 1</a></li>
