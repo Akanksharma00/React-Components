@@ -28,3 +28,9 @@
     list-style-type: none;
     text-align: left;
 }
+
+.component-section{
+    height: 300px; 
+    border: 10px solid pink;
+    width: 73%;
+}
